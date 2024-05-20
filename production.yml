@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: production-container
-          image: ravivarman46/testimage
+          image: aggrawalshanky/testimage
           ports:
             - containerPort: 80
 ---
