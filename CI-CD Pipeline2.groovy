@@ -1,11 +1,11 @@
 pipeline {
-    agent { label 'prod'}
+    agent { label 'prodnode'}
 
     stages {
         stage ('cloning Git-repo') {
             steps {
                 git branch: 'main', 
-                url: ' https://github.com/Ravivarman16/DevOps-Capstone-project-2.git '
+                url: ' https://github.com/aggrawalshanky/DevOps-Capstone-project-2.git '
             }
         }
         stage ('production by k8s') {
